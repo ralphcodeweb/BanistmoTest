@@ -1,0 +1,6 @@
+172.24.0.1 - - [28/Jan/2022:07:33:21 +0000] "GET / HTTP/1.1" 500 534420 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36"
+172.24.0.1 - - [28/Jan/2022:07:33:22 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "http://test-banistmo.test/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36"
+172.24.0.1 - - [28/Jan/2022:07:34:53 +0000] "GET / HTTP/1.1" 200 5722 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36"
+172.24.0.1 - - [28/Jan/2022:07:35:01 +0000] "GET / HTTP/1.1" 200 5722 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36"
+172.24.0.1 - - [28/Jan/2022:07:35:02 +0000] "GET / HTTP/1.1" 200 5722 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36"
+172.24.0.1 - - [28/Jan/2022:07:42:15 +0000] "GET / HTTP/1.1" 200 5722 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36"
