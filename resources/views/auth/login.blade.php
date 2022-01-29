@@ -19,7 +19,8 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" id="app">
+    <example-component></example-component>
     <div class="login-box">
         <div class="login-logo">
             <b>Banistmo</b>Test
@@ -72,12 +73,9 @@
     </div>
     <!-- /.login-box -->
 
-    <!-- jQuery -->
-    <script src="/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="/dist/js/adminlte.min.js"></script>
+    <script src="/js/app.js"></script>
+
+
 
 </body>
 </html>
