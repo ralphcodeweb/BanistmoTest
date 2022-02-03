@@ -6,40 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Banistmo | Test</title>
     <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/kErt5b8W8IFpLUoDZq4vWK-7ngjMYdEhQqTon7G25huSsoWB_He5ySud0sOhWkdM6mc" />
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="{{ mix('css/template.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
 
     <div class="wrapper" id="app">
-
-        @include('admin.partials.nav')
-
-        @include('admin.partials.aside')
-
-        <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-
-            <!-- Content Header (Page header) -->
-            @yield('header')
-            <!-- /.content-header -->
-
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
-                    <example-component></example-component>
-                    @yield('content')
-                </div><!-- /.container-fluid -->
-            </section>
-            <!-- /.content -->
-        </div>
-        <!-- /.content-wrapper -->
-        @include('admin.partials.footer')
-
+        @if (Auth::check())
+            <App ruta="{{ route('basepath') }}"></App>
+        @else
+            <Login></Login>
+        @endif
     </div>
     <!-- ./wrapper -->
 
