@@ -3,7 +3,8 @@
         <div class="login-box">
             <div class="login-logo">
                 <a href="../../index2.html">
-                    <img src="https://lh3.googleusercontent.com/kErt5b8W8IFpLUoDZq4vWK-7ngjMYdEhQqTon7G25huSsoWB_He5ySud0sOhWkdM6mc" width="40"><b>Test</b>Banistmo
+                    <b>Test</b>Banistmo
+
                 </a>
             </div>
             <!-- /.login-logo -->
