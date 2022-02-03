@@ -10,29 +10,36 @@ use App\Models\User;
 
 class UserTest extends TestCase
 {
-    use RefreshDatabase;
+    use RefreshDatabase, WithFaker;
 
-    /* public function test_user_can_view_a_login_form()
+    /** @test */
+    public function intento_emil_password()
     {
-        $response = $this->get('/login');
+        //$this->withoutExceptionHandling();
 
-        $response->assertSuccessful();
-        $response->assertViewIs('auth.login');
+        $this->json('POST', 'api/v1/login')
+            ->assertStatus(422)
+            ->assertSessionMissing('email', 'password');
     }
 
-    public function test_user_can_login_with_correct_credentials()
+
+    /** @test */
+    public function usuario_credenciales_correctas()
     {
+        //$this->withoutExceptionHandling();
+
         $user = User::factory()->create([
-            'password' => bcrypt($password = 'password'),
+           'email' => 'sample@test.com',
+           'password' => bcrypt('sample123'),
         ]);
 
-        $response = $this->post('/login', [
-            'email' => $user->email,
-            'password' => $password,
-        ]);
 
-        $response->assertRedirect('/admin');
-        $this->assertAuthenticatedAs($user);
-    } */
+        $loginData = ['email' => 'sample@test.com', 'password' => 'sample123'];
+
+        $response = $this->json('POST', 'api/v1/login', $loginData, ['Accept' => 'application/json'])
+            ->assertStatus(200);
+
+        $this->assertAuthenticated();
+    }
 
 }
