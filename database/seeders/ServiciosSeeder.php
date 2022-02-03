@@ -19,27 +19,33 @@ class ServiciosSeeder extends Seeder
         $factores = [
             [
                 'descripcion' => 'Cuentas',
-                'ingresos' => null,
+                'ingreso' => null,
                 'edad' => 18,
-                'cod_ciudad' => 1,
+                'id_ciudades' => 1,
             ],
             [
                 'descripcion' => 'Tarjeta de Debito',
-                'ingresos' => 500,
+                'ingreso' => 500,
                 'edad' => 18,
-                'cod_ciudad' => 1,
+                'id_ciudades' => 1,
             ],
             [
                 'descripcion' => 'Seguro',
-                'ingresos' => 1000,
+                'ingreso' => 1000,
                 'edad' => 15,
-                'cod_ciudad' => 1,
+                'id_ciudades' => 1,
             ],
             [
                 'descripcion' => 'Inversiones',
-                'ingresos' => 4500,
+                'ingreso' => 4500,
                 'edad' => 25,
-                'cod_ciudad' => 1,
+                'id_ciudades' => 1,
+            ],
+            [
+                'descripcion' => 'Giros',
+                'ingreso' => null,
+                'edad' => null,
+                'id_ciudades' => 1,
             ]
         ];
 
