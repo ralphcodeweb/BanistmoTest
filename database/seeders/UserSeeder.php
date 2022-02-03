@@ -17,6 +17,10 @@ class UserSeeder extends Seeder
 
         User::truncate();
 
-        User::create(['email' => 'rafa@localhost.com']);
+        User::create([
+            'name' => 'Rafael Martinez',
+            'email' => 'rafa@localhost.com',
+            'password' => bcrypt('secret')
+        ]);
     }
 }
